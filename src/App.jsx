@@ -134,7 +134,7 @@ function App() {
                 const date = moment(item.date, 'X');
                 const { duration, durationText } = getDuration(item);
                 const speed = item.distance / duration.asHours();
-                const icon = item.type === 'Ride' ? '/running.svg' : '/bicycle.svg';
+                const icon = item.type === 'Ride' ? '/bicycle.svg' : '/running.svg';
                 return (
                   <div className="main__history__activity" key={index}>
                     <p className="main__history__activity__type">
